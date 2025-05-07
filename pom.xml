@@ -29,6 +29,7 @@
 	</scm>
 	<modules>
 		<module>dominio</module>
+		<module>infraestructura</module>
 	</modules>
 	<properties>
 		<java.version>17</java.version>

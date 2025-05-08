@@ -15,11 +15,11 @@ public class Festivo {
     private String nombre;
     private int dia;
     private int mes;
-    private int diasPascua;
+    private Integer diasPascua;
     
     /* Para relacionar llave foranea*/
     @ManyToOne
-    @JoinColumn(name = "idTipo") 
+    @JoinColumn(name = "idtipo") 
     private TipoFestivo tipo;
 
     public Festivo() {
@@ -66,14 +66,6 @@ public class Festivo {
         this.mes = mes;
     }
 
-    public int getDiasPascua() {
-        return diasPascua;
-    }
-
-    public void setDiasPascua(int diasPascua) {
-        this.diasPascua = diasPascua;
-    }
-
     public TipoFestivo getTipo() {
         return tipo;
     }
@@ -82,7 +74,13 @@ public class Festivo {
         this.tipo = tipo;
     }
 
-    
+    public Integer getDiasPascua() {
+        return diasPascua;
+    }
+
+    public void setDiasPascua(Integer diasPascua) {
+        this.diasPascua = diasPascua;
+    }    
     
 }
 
